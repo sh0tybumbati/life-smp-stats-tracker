@@ -234,8 +234,34 @@ const LifeSeriesTracker = () => {
 
         {/* Series Selector */}
         <div className="mb-8">
+          {/* Canon Series */}
+          <div className="flex flex-wrap justify-center gap-3 mb-4">
+            {Object.keys(seriesData)
+              .filter(series => !['Real Life', 'Simple Life'].includes(series))
+              .map((series) => (
+                <button
+                  key={series}
+                  onClick={() => {
+                    setSelectedSeries(series);
+                    setSelectedMember(null);
+                  }}
+                  className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+                    selectedSeries === series
+                      ? 'bg-red-600 text-white shadow-lg'
+                      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                  }`}
+                >
+                  {series}
+                </button>
+              ))}
+          </div>
+          
+          {/* Special Series */}
+          <div className="text-center mb-2">
+            <span className="text-gray-500 text-sm">Special Events</span>
+          </div>
           <div className="flex flex-wrap justify-center gap-3">
-            {Object.keys(seriesData).map((series) => (
+            {['Real Life', 'Simple Life'].map((series) => (
               <button
                 key={series}
                 onClick={() => {
@@ -244,7 +270,7 @@ const LifeSeriesTracker = () => {
                 }}
                 className={`px-6 py-3 rounded-lg font-semibold transition-all ${
                   selectedSeries === series
-                    ? 'bg-red-600 text-white shadow-lg'
+                    ? 'bg-purple-600 text-white shadow-lg'
                     : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
                 }`}
               >
