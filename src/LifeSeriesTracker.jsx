@@ -9,155 +9,175 @@ const LifeSeriesTracker = () => {
   const seriesData = {
     '3rd Life': {
       participants: [
-        { name: 'Grian', finalPlacement: 1, lives: { start: 3, end: 0 }, kills: 8, deaths: 0, alliances: ['Desert Duo'], notable: 'Winner - 8 kills (most)' },
-        { name: 'GoodTimesWithScar', finalPlacement: 2, lives: { start: 3, end: 0 }, kills: 4, deaths: 3, alliances: ['Desert Duo'], notable: 'Runner-up' },
+        { name: 'Grian', finalPlacement: 1, lives: { start: 3, end: 0 }, kills: 8, deaths: 3, alliances: ['Desert Duo'], notable: 'Winner - Most kills (8)' },
+        { name: 'GoodTimesWithScar', finalPlacement: 2, lives: { start: 3, end: 0 }, kills: 3, deaths: 3, alliances: ['Desert Duo'], notable: 'Runner-up - Most eliminations (3)' },
         { name: 'BdoubleO100', finalPlacement: 3, lives: { start: 3, end: 0 }, kills: 3, deaths: 3, alliances: ['Crastle'], notable: 'Bdubs - Bronze' },
-        { name: 'InTheLittleWood', finalPlacement: 6, lives: { start: 3, end: 0 }, kills: 4, deaths: 3, alliances: ['Dogwarts'], notable: 'Martyn' },
-        { name: 'Smajor1995', finalPlacement: 10, lives: { start: 3, end: 0 }, kills: 2, deaths: 3, alliances: ['Flower Husbands'], notable: 'Scott' },
-        { name: 'Rendog', finalPlacement: 7, lives: { start: 3, end: 0 }, kills: 5, deaths: 3, alliances: ['Dogwarts'], notable: 'Ren - 5 kills' },
+        { name: 'Bigbst4tz2', finalPlacement: 4, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Dogwarts'], notable: 'BigB' },
         { name: 'ImpulseSV', finalPlacement: 5, lives: { start: 3, end: 0 }, kills: 3, deaths: 3, alliances: ['Crastle'], notable: 'Impulse' },
+        { name: 'InTheLittleWood', finalPlacement: 6, lives: { start: 3, end: 0 }, kills: 4, deaths: 3, alliances: ['Dogwarts'], notable: 'Martyn - 4 kills' },
+        { name: 'Rendog', finalPlacement: 7, lives: { start: 3, end: 0 }, kills: 6, deaths: 3, alliances: ['Dogwarts'], notable: 'Ren - Red King (6 kills)' },
         { name: 'TangoTek', finalPlacement: 8, lives: { start: 3, end: 0 }, kills: 3, deaths: 3, alliances: ['Crastle'], notable: 'Tango' },
         { name: 'EthosLab', finalPlacement: 9, lives: { start: 3, end: 0 }, kills: 1, deaths: 3, alliances: ['Crastle'], notable: 'Etho' },
-        { name: 'ZombieCleo', finalPlacement: 13, lives: { start: 3, end: 0 }, kills: 1, deaths: 3, alliances: ['Team BEST'], notable: 'Cleo' },
-        { name: 'SmallishBeans', finalPlacement: 11, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Southlanders'], notable: 'Joel' },
-        { name: 'Skizzleman', finalPlacement: 12, lives: { start: 3, end: 0 }, kills: 2, deaths: 3, alliances: ['Team BEST'], notable: 'Skizz' },
-        { name: 'Bigbst4tz2', finalPlacement: 4, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Dogwarts'], notable: 'BigB' },
-        { name: 'Solidarity', finalPlacement: 14, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Flower Husbands'], notable: 'Jimmy - First out' }
+        { name: 'Smajor1995', finalPlacement: 10, lives: { start: 3, end: 0 }, kills: 2, deaths: 3, alliances: ['Flower Husbands'], notable: 'Scott' },
+        { name: 'SmallishBeans', finalPlacement: 11, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Various'], notable: 'Joel' },
+        { name: 'Skizzleman', finalPlacement: 12, lives: { start: 3, end: 0 }, kills: 2, deaths: 3, alliances: ['Team BEST'], notable: 'Skizz - 2 eliminations' },
+        { name: 'ZombieCleo', finalPlacement: 13, lives: { start: 3, end: 0 }, kills: 1, deaths: 3, alliances: ['Crastle'], notable: 'Cleo' },
+        { name: 'Solidarity', finalPlacement: 14, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Flower Husbands'], notable: 'Jimmy - First out (Canary Curse)' }
       ]
     },
     'Last Life': {
       participants: [
-        { name: 'Smajor1995', finalPlacement: 1, lives: { start: 2, end: 0 }, kills: 4, deaths: 2, alliances: ['Gaslight Gatekeep Girlboss'], notable: 'Scott - Winner' },
-        { name: 'Rendog', finalPlacement: 2, lives: { start: 2, end: 0 }, kills: 3, deaths: 2, alliances: ['Shadow Alliance'], notable: 'Ren - Runner-up' },
+        { name: 'Smajor1995', finalPlacement: 1, lives: { start: 2, end: 0 }, kills: 5, deaths: 2, alliances: ['Gaslight Gatekeep Girlboss'], notable: 'Scott - Winner (Most eliminations: 4)' },
+        { name: 'Rendog', finalPlacement: 2, lives: { start: 2, end: 0 }, kills: 5, deaths: 2, alliances: ['Shadow Alliance'], notable: 'Ren - Runner-up' },
         { name: 'InTheLittleWood', finalPlacement: 3, lives: { start: 4, end: 0 }, kills: 2, deaths: 4, alliances: ['Southlanders'], notable: 'Martyn - Bronze' },
-        { name: 'PearlescentMoon', finalPlacement: 4, lives: { start: 6, end: 0 }, kills: 6, deaths: 5, alliances: ['Gaslight Gatekeep Girlboss'], notable: 'Pearl - Scarlet Pearl (most deaths)' },
+        { name: 'PearlescentMoon', finalPlacement: 4, lives: { start: 6, end: 0 }, kills: 5, deaths: 5, alliances: ['Gaslight Gatekeep Girlboss'], notable: 'Pearl - Scarlet Pearl' },
         { name: 'SmallishBeans', finalPlacement: 5, lives: { start: 5, end: 0 }, kills: 11, deaths: 5, alliances: ['Southlanders'], notable: 'Joel - Most kills (11)' },
         { name: 'EthosLab', finalPlacement: 6, lives: { start: 4, end: 0 }, kills: 1, deaths: 4, alliances: ['Fairy Fort'], notable: 'Etho' },
-        { name: 'Grian', finalPlacement: 7, lives: { start: 2, end: 0 }, kills: 3, deaths: 2, alliances: ['Southlanders'], notable: 'Chaos Incarnate' },
-        { name: 'ZombieCleo', finalPlacement: 8, lives: { start: 2, end: 0 }, kills: 2, deaths: 5, alliances: ['Fairy Fort'], notable: 'Cleo' },
+        { name: 'Grian', finalPlacement: 7, lives: { start: 2, end: 0 }, kills: 5, deaths: 2, alliances: ['Southlanders'], notable: 'Grian - 3 eliminations' },
+        { name: 'ZombieCleo', finalPlacement: 8, lives: { start: 2, end: 0 }, kills: 1, deaths: 5, alliances: ['Fairy Fort'], notable: 'Cleo - Most deaths (5)' },
         { name: 'GoodTimesWithScar', finalPlacement: 9, lives: { start: 6, end: 0 }, kills: 1, deaths: 6, alliances: ['Magical Mountain'], notable: 'Scar' },
-        { name: 'Bigbst4tz2', finalPlacement: 10, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: [], notable: 'BigB' },
+        { name: 'Bigbst4tz2', finalPlacement: 10, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Various'], notable: 'BigB' },
         { name: 'TangoTek', finalPlacement: 11, lives: { start: 6, end: 0 }, kills: 1, deaths: 6, alliances: ['BEST'], notable: 'Tango' },
-        { name: 'BdoubleO100', finalPlacement: 12, lives: { start: 4, end: 0 }, kills: 0, deaths: 4, alliances: ['Fairy Fort'], notable: 'Bdubs' },
-        { name: 'LDShadowLady', finalPlacement: 13, lives: { start: 4, end: 0 }, kills: 0, deaths: 4, alliances: ['Fairy Fort'], notable: 'Lizzie' },
+        { name: 'BdoubleO100', finalPlacement: 12, lives: { start: 4, end: 0 }, kills: 3, deaths: 4, alliances: ['Fairy Fort'], notable: 'Bdubs' },
+        { name: 'LDShadowLady', finalPlacement: 13, lives: { start: 4, end: 0 }, kills: 5, deaths: 4, alliances: ['Fairy Fort'], notable: 'Lizzie' },
         { name: 'ImpulseSV', finalPlacement: 14, lives: { start: 3, end: 0 }, kills: 1, deaths: 3, alliances: ['BEST'], notable: 'Impulse' },
-        { name: 'Skizzleman', finalPlacement: 15, lives: { start: 3, end: 0 }, kills: 2, deaths: 3, alliances: ['BEST'], notable: 'Skizz' },
-        { name: 'MumboJumbo', finalPlacement: 16, lives: { start: 4, end: 0 }, kills: 0, deaths: 4, alliances: ['Southlanders'], notable: 'Mumbo' },
-        { name: 'Solidarity', finalPlacement: 17, lives: { start: 2, end: 0 }, kills: 0, deaths: 2, alliances: ['Southlanders'], notable: 'Jimmy - First out again' }
+        { name: 'Skizzleman', finalPlacement: 15, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['BEST'], notable: 'Skizz' },
+        { name: 'MumboJumbo', finalPlacement: 16, lives: { start: 4, end: 0 }, kills: 5, deaths: 4, alliances: ['Southlanders'], notable: 'Mumbo' },
+        { name: 'Solidarity', finalPlacement: 17, lives: { start: 2, end: 0 }, kills: 1, deaths: 2, alliances: ['Southlanders'], notable: 'Jimmy - First out again (Canary #2)' }
       ]
     },
     'Double Life': {
       participants: [
-        { name: 'PearlescentMoon', finalPlacement: 1, lives: { start: 1, end: 0 }, kills: 4, deaths: 1, alliances: ['Scott & Pearl'], notable: 'Pearl - Winner (Scott sacrificed)' },
-        { name: 'Smajor1995', finalPlacement: 2, lives: { start: 1, end: 0 }, kills: 0, deaths: 1, alliances: ['Scott & Pearl'], notable: 'Scott - Sacrificed for Pearl' },
-        { name: 'InTheLittleWood', finalPlacement: 3, lives: { start: 1, end: 0 }, kills: 0, deaths: 1, alliances: ['Cleo & Martyn'], notable: 'Martyn - with Cleo' },
-        { name: 'ZombieCleo', finalPlacement: 3, lives: { start: 1, end: 0 }, kills: 0, deaths: 3, alliances: ['Cleo & Martyn'], notable: 'Cleo - with Martyn (most deaths)' },
-        { name: 'BdoubleO100', finalPlacement: 5, lives: { start: 1, end: 0 }, kills: 0, deaths: 1, alliances: ['Homewreckers'], notable: 'Bdubs - with Impulse' },
-        { name: 'ImpulseSV', finalPlacement: 5, lives: { start: 1, end: 0 }, kills: 0, deaths: 1, alliances: ['Homewreckers'], notable: 'Impulse - with Bdubs' },
-        { name: 'Grian', finalPlacement: 7, lives: { start: 1, end: 0 }, kills: 1, deaths: 1, alliances: ['Desert Duo'], notable: 'Soulmates with Scar' },
-        { name: 'GoodTimesWithScar', finalPlacement: 7, lives: { start: 1, end: 0 }, kills: 0, deaths: 1, alliances: ['Desert Duo'], notable: 'Soulmates with Grian' },
-        { name: 'SmallishBeans', finalPlacement: 9, lives: { start: 1, end: 0 }, kills: 3, deaths: 1, alliances: ['Boat Boys'], notable: 'Joel - with Etho' },
-        { name: 'EthosLab', finalPlacement: 9, lives: { start: 1, end: 0 }, kills: 2, deaths: 1, alliances: ['Boat Boys'], notable: 'Etho - with Joel' },
-        { name: 'Rendog', finalPlacement: 11, lives: { start: 1, end: 0 }, kills: 0, deaths: 1, alliances: ['Box Boys'], notable: 'Ren - with BigB' },
-        { name: 'Bigbst4tz2', finalPlacement: 11, lives: { start: 1, end: 0 }, kills: 0, deaths: 1, alliances: ['Box Boys'], notable: 'BigB - with Ren' },
-        { name: 'TangoTek', finalPlacement: 13, lives: { start: 1, end: 0 }, kills: 0, deaths: 1, alliances: ['Ranchers'], notable: 'Tango - with Jimmy (first eliminated)' },
-        { name: 'Solidarity', finalPlacement: 13, lives: { start: 1, end: 0 }, kills: 0, deaths: 1, alliances: ['Ranchers'], notable: 'Jimmy - with Tango (first eliminated)' }
+        { name: 'PearlescentMoon', finalPlacement: 1, lives: { start: 3, end: 0 }, kills: 2, deaths: 3, alliances: ['Scott & Pearl'], notable: 'Pearl - Winner (2 eliminations)' },
+        { name: 'Smajor1995', finalPlacement: 2, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Scott & Pearl'], notable: 'Scott - Sacrificed for Pearl' },
+        { name: 'InTheLittleWood', finalPlacement: 3, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Cleo & Martyn'], notable: 'Martyn - Bronze (with Cleo)' },
+        { name: 'ZombieCleo', finalPlacement: 4, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Cleo & Martyn'], notable: 'Cleo - Most deaths (3)' },
+        { name: 'ImpulseSV', finalPlacement: 5, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Homewreckers'], notable: 'Impulse - with Bdubs' },
+        { name: 'BdoubleO100', finalPlacement: 6, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Homewreckers'], notable: 'Bdubs - with Impulse' },
+        { name: 'SmallishBeans', finalPlacement: 7, lives: { start: 3, end: 0 }, kills: 3, deaths: 3, alliances: ['Boat Boys'], notable: 'Joel - Most kills (3)' },
+        { name: 'EthosLab', finalPlacement: 8, lives: { start: 3, end: 0 }, kills: 2, deaths: 3, alliances: ['Boat Boys'], notable: 'Etho - with Joel' },
+        { name: 'GoodTimesWithScar', finalPlacement: 9, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Desert Duo'], notable: 'Scar - with Grian' },
+        { name: 'Grian', finalPlacement: 10, lives: { start: 3, end: 0 }, kills: 3, deaths: 3, alliances: ['Desert Duo'], notable: 'Grian - 2 eliminations' },
+        { name: 'Bigbst4tz2', finalPlacement: 11, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Box Boys'], notable: 'BigB - with Ren' },
+        { name: 'Rendog', finalPlacement: 12, lives: { start: 3, end: 0 }, kills: 1, deaths: 3, alliances: ['Box Boys'], notable: 'Ren - with BigB' },
+        { name: 'TangoTek', finalPlacement: 13, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Ranchers'], notable: 'Tango - First out (with Jimmy)' },
+        { name: 'Solidarity', finalPlacement: 14, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Ranchers'], notable: 'Jimmy - First out (Canary #3)' }
       ]
     },
     'Limited Life': {
       participants: [
-        { name: 'InTheLittleWood', finalPlacement: 1, lives: { start: 24, end: 0 }, kills: ['Multiple'], deaths: ['Time ran out'], alliances: ['Mean Gills', 'Clockers'], notable: 'Martyn - Winner' },
-        { name: 'ImpulseSV', finalPlacement: 2, lives: { start: 24, end: 0 }, kills: ['Multiple'], deaths: ['Time ran out'], alliances: ['Clockers'], notable: 'Impulse - Runner-up' },
-        { name: 'Smajor1995', finalPlacement: 3, lives: { start: 24, end: 0 }, kills: ['Multiple'], deaths: ['Time ran out'], alliances: ['Mean Gills'], notable: 'Scott - Bronze' },
-        { name: 'BdoubleO100', finalPlacement: 4, lives: { start: 24, end: 0 }, kills: [], deaths: ['Time ran out'], alliances: ['Clockers'], notable: 'Bdubs' },
-        { name: 'TangoTek', finalPlacement: 5, lives: { start: 24, end: 0 }, kills: [], deaths: ['Time ran out'], alliances: ['TIES'], notable: 'Tango' },
-        { name: 'EthosLab', finalPlacement: 6, lives: { start: 24, end: 0 }, kills: [], deaths: ['Time ran out'], alliances: ['TIES'], notable: 'Etho' },
-        { name: 'ZombieCleo', finalPlacement: 7, lives: { start: 24, end: 0 }, kills: [], deaths: ['Time ran out'], alliances: ['Clockers'], notable: 'Cleo' },
-        { name: 'PearlescentMoon', finalPlacement: 8, lives: { start: 24, end: 0 }, kills: [], deaths: ['Time ran out'], alliances: ['Nosy Neighbors'], notable: 'Pearl' },
-        { name: 'Bigbst4tz2', finalPlacement: 9, lives: { start: 24, end: 0 }, kills: [], deaths: ['Time ran out'], alliances: ['Nosy Neighbors'], notable: 'BigB' },
-        { name: 'Grian', finalPlacement: 10, lives: { start: 24, end: 0 }, kills: [], deaths: ['Time ran out'], alliances: ['Bad Boys'], notable: 'Bad Boy Chaos' },
-        { name: 'SmallishBeans', finalPlacement: 11, lives: { start: 24, end: 0 }, kills: [], deaths: ['Time ran out'], alliances: ['Bad Boys'], notable: 'Joel' },
-        { name: 'GoodTimesWithScar', finalPlacement: 12, lives: { start: 24, end: 0 }, kills: [], deaths: ['Time ran out'], alliances: ['Clockers'], notable: 'Scar' },
-        { name: 'Skizzleman', finalPlacement: 13, lives: { start: 24, end: 0 }, kills: [], deaths: ['Time ran out'], alliances: ['TIES'], notable: 'Skizz - Returns' },
-        { name: 'Solidarity', finalPlacement: 14, lives: { start: 24, end: 0 }, kills: [], deaths: ['Time ran out'], alliances: ['Bad Boys'], notable: 'Jimmy - Bad Boy Sheriff' }
+        { name: 'InTheLittleWood', finalPlacement: 1, lives: { start: 24, end: 0 }, kills: 7, deaths: 7, alliances: ['Mean Gills'], notable: 'Martyn - Winner (First win)' },
+        { name: 'ImpulseSV', finalPlacement: 2, lives: { start: 24, end: 0 }, kills: 5, deaths: 7, alliances: ['Clockers'], notable: 'Impulse - Runner-up' },
+        { name: 'Smajor1995', finalPlacement: 3, lives: { start: 24, end: 0 }, kills: 17, deaths: 8, alliances: ['Mean Gills'], notable: 'Scott - Bronze (17 kills)' },
+        { name: 'PearlescentMoon', finalPlacement: 4, lives: { start: 24, end: 0 }, kills: 5, deaths: 7, alliances: ['Nosy Neighbors'], notable: 'Pearl' },
+        { name: 'EthosLab', finalPlacement: 5, lives: { start: 24, end: 0 }, kills: 6, deaths: 7, alliances: ['TIES'], notable: 'Etho' },
+        { name: 'Grian', finalPlacement: 6, lives: { start: 24, end: 0 }, kills: 20, deaths: 8, alliances: ['Bad Boys', 'Nosy Neighbors'], notable: 'Grian - Most kills (20)' },
+        { name: 'Bigbst4tz2', finalPlacement: 7, lives: { start: 24, end: 0 }, kills: 3, deaths: 7, alliances: ['Nosy Neighbors'], notable: 'BigB' },
+        { name: 'ZombieCleo', finalPlacement: 8, lives: { start: 24, end: 0 }, kills: 8, deaths: 8, alliances: ['Clockers'], notable: 'Cleo' },
+        { name: 'GoodTimesWithScar', finalPlacement: 9, lives: { start: 24, end: 0 }, kills: 7, deaths: 8, alliances: ['Clockers'], notable: 'Scar' },
+        { name: 'TangoTek', finalPlacement: 10, lives: { start: 24, end: 0 }, kills: 8, deaths: 8, alliances: ['TIES'], notable: 'Tango' },
+        { name: 'BdoubleO100', finalPlacement: 11, lives: { start: 24, end: 0 }, kills: 5, deaths: 8, alliances: ['Clockers'], notable: 'Bdubs' },
+        { name: 'SmallishBeans', finalPlacement: 12, lives: { start: 24, end: 0 }, kills: 14, deaths: 16, alliances: ['Bad Boys'], notable: 'Joel - Most deaths (16)' },
+        { name: 'Skizzleman', finalPlacement: 13, lives: { start: 24, end: 0 }, kills: 5, deaths: 8, alliances: ['TIES'], notable: 'Skizz' },
+        { name: 'Solidarity', finalPlacement: 14, lives: { start: 24, end: 0 }, kills: 4, deaths: 8, alliances: ['Bad Boys'], notable: 'Jimmy - First out (Canary #4)' }
       ]
     },
     'Secret Life': {
       participants: [
-        { name: 'GoodTimesWithScar', finalPlacement: 1, lives: { start: 6, end: 0 }, kills: ['Multiple'], deaths: ['Task fail', 'PvP'], alliances: ['Heart Foundation'], notable: 'Scar - Winner' },
-        { name: 'PearlescentMoon', finalPlacement: 2, lives: { start: 6, end: 0 }, kills: ['Multiple'], deaths: ['Task fail', 'Scar'], alliances: ['G.G.G.G.'], notable: 'Pearl - Runner-up' },
-        { name: 'GeminiTay', finalPlacement: 3, lives: { start: 6, end: 0 }, kills: ['Multiple'], deaths: ['Task fail', 'Scar'], alliances: ['G.G.G.G.'], notable: 'Gem - New Player Bronze' },
-        { name: 'Grian', finalPlacement: 4, lives: { start: 6, end: 0 }, kills: ['Multiple'], deaths: ['Task fail'], alliances: ['The Family'], notable: 'Secret Keeper' },
-        { name: 'Smajor1995', finalPlacement: 5, lives: { start: 6, end: 0 }, kills: ['Multiple'], deaths: ['Task fail'], alliances: ['G.G.G.G.'], notable: 'Scott' },
-        { name: 'InTheLittleWood', finalPlacement: 6, lives: { start: 6, end: 0 }, kills: ['Multiple'], deaths: ['Task fail'], alliances: ['Mean Gills'], notable: 'Martyn' },
-        { name: 'ImpulseSV', finalPlacement: 7, lives: { start: 6, end: 0 }, kills: [], deaths: ['Task fail'], alliances: ['Heart Foundation'], notable: 'Impulse' },
-        { name: 'TangoTek', finalPlacement: 8, lives: { start: 6, end: 0 }, kills: [], deaths: ['Task fail'], alliances: ['T.I.E.S.'], notable: 'Tango' },
-        { name: 'EthosLab', finalPlacement: 9, lives: { start: 6, end: 0 }, kills: [], deaths: ['Task fail'], alliances: ['T.I.E.S.'], notable: 'Etho' },
-        { name: 'BdoubleO100', finalPlacement: 10, lives: { start: 6, end: 0 }, kills: [], deaths: ['Task fail'], alliances: ['Heart Foundation'], notable: 'Bdubs' },
-        { name: 'ZombieCleo', finalPlacement: 11, lives: { start: 6, end: 0 }, kills: [], deaths: ['Task fail'], alliances: ['Mounders'], notable: 'Cleo' },
-        { name: 'Bigbst4tz2', finalPlacement: 12, lives: { start: 6, end: 0 }, kills: [], deaths: ['Task fail'], alliances: ['The Family'], notable: 'BigB' },
-        { name: 'SmallishBeans', finalPlacement: 13, lives: { start: 6, end: 0 }, kills: [], deaths: ['Task fail'], alliances: ['Mounders'], notable: 'Joel' },
-        { name: 'MumboJumbo', finalPlacement: 14, lives: { start: 6, end: 0 }, kills: [], deaths: ['Task fail'], alliances: ['The Family'], notable: 'Mumbo - Returns' },
-        { name: 'Skizzleman', finalPlacement: 15, lives: { start: 6, end: 0 }, kills: [], deaths: ['Task fail'], alliances: ['T.I.E.S.'], notable: 'Skizz' },
-        { name: 'LDShadowLady', finalPlacement: 16, lives: { start: 6, end: 0 }, kills: [], deaths: ['Task fail'], alliances: ['Mounders'], notable: 'Lizzie - Returns' },
-        { name: 'Solidarity', finalPlacement: 17, lives: { start: 6, end: 0 }, kills: [], deaths: ['Task fail'], alliances: ['Mean Gills'], notable: 'Jimmy - Canary Curse Broken' }
+        { name: 'GoodTimesWithScar', finalPlacement: 1, lives: { start: 30, end: 0 }, kills: 11, deaths: 6, alliances: ['Various'], notable: 'Scar - Winner (Most kills & eliminations: 6)' },
+        { name: 'PearlescentMoon', finalPlacement: 2, lives: { start: 30, end: 0 }, kills: 3, deaths: 6, alliances: ['Mounders'], notable: 'Pearl - Runner-up' },
+        { name: 'GeminiTay', finalPlacement: 3, lives: { start: 30, end: 0 }, kills: 8, deaths: 6, alliances: ['Various'], notable: 'Gem - Bronze (Debut season)' },
+        { name: 'Smajor1995', finalPlacement: 4, lives: { start: 30, end: 0 }, kills: 3, deaths: 6, alliances: ['Various'], notable: 'Scott' },
+        { name: 'SmallishBeans', finalPlacement: 5, lives: { start: 30, end: 0 }, kills: 3, deaths: 6, alliances: ['Mounders'], notable: 'Joel' },
+        { name: 'BdoubleO100', finalPlacement: 6, lives: { start: 30, end: 0 }, kills: 1, deaths: 6, alliances: ['Mounders'], notable: 'Bdubs' },
+        { name: 'ImpulseSV', finalPlacement: 7, lives: { start: 30, end: 0 }, kills: 2, deaths: 6, alliances: ['Various'], notable: 'Impulse' },
+        { name: 'Grian', finalPlacement: 8, lives: { start: 30, end: 0 }, kills: 1, deaths: 6, alliances: ['The Family'], notable: 'Grian - Secret Keeper' },
+        { name: 'ZombieCleo', finalPlacement: 9, lives: { start: 30, end: 0 }, kills: 0, deaths: 6, alliances: ['Mounders'], notable: 'Cleo' },
+        { name: 'Bigbst4tz2', finalPlacement: 10, lives: { start: 30, end: 0 }, kills: 1, deaths: 6, alliances: ['The Family'], notable: 'BigB' },
+        { name: 'InTheLittleWood', finalPlacement: 11, lives: { start: 30, end: 0 }, kills: 2, deaths: 6, alliances: ['Mean Gills'], notable: 'Martyn' },
+        { name: 'EthosLab', finalPlacement: 12, lives: { start: 30, end: 0 }, kills: 1, deaths: 6, alliances: ['Roomies'], notable: 'Etho' },
+        { name: 'Skizzleman', finalPlacement: 13, lives: { start: 30, end: 0 }, kills: 1, deaths: 6, alliances: ['TIES'], notable: 'Skizz' },
+        { name: 'TangoTek', finalPlacement: 14, lives: { start: 30, end: 0 }, kills: 0, deaths: 6, alliances: ['TIES'], notable: 'Tango' },
+        { name: 'MumboJumbo', finalPlacement: 15, lives: { start: 30, end: 0 }, kills: 0, deaths: 6, alliances: ['The Family'], notable: 'Mumbo' },
+        { name: 'Solidarity', finalPlacement: 16, lives: { start: 30, end: 0 }, kills: 1, deaths: 6, alliances: ['Mean Gills'], notable: 'Jimmy - Canary Curse Broken!' },
+        { name: 'LDShadowLady', finalPlacement: 17, lives: { start: 30, end: 0 }, kills: 0, deaths: 6, alliances: ['Mounders'], notable: 'Lizzie - First out (New Canary)' }
       ]
     },
     'Wild Life': {
       participants: [
-        { name: 'SmallishBeans', finalPlacement: 1, lives: { start: 6, end: 0 }, kills: ['Multiple'], deaths: ['Gimmick'], alliances: ['Family'], notable: 'Joel - Winner' },
-        { name: 'Grian', finalPlacement: 2, lives: { start: 6, end: 0 }, kills: ['Multiple'], deaths: ['Gimmick'], alliances: ['Grian, Skizz & Mumbo'], notable: 'Runner-up' },
-        { name: 'Rendog', finalPlacement: 3, lives: { start: 6, end: 0 }, kills: ['Multiple'], deaths: ['Gimmick'], alliances: ['Renwood Mound'], notable: 'Ren - Returns Bronze' },
-        { name: 'InTheLittleWood', finalPlacement: 4, lives: { start: 6, end: 0 }, kills: ['Multiple'], deaths: ['Gimmick'], alliances: ['Renwood Mound'], notable: 'Martyn' },
-        { name: 'GeminiTay', finalPlacement: 5, lives: { start: 6, end: 0 }, kills: ['Multiple'], deaths: ['Gimmick'], alliances: ['Family'], notable: 'Gem' },
-        { name: 'Smajor1995', finalPlacement: 6, lives: { start: 6, end: 0 }, kills: ['Multiple'], deaths: ['Gimmick'], alliances: ['Sub One Club'], notable: 'Scott' },
-        { name: 'PearlescentMoon', finalPlacement: 7, lives: { start: 6, end: 0 }, kills: ['Multiple'], deaths: ['Gimmick'], alliances: ['Family'], notable: 'Pearl' },
-        { name: 'BdoubleO100', finalPlacement: 8, lives: { start: 6, end: 0 }, kills: [], deaths: ['Gimmick'], alliances: ['Sub One Club'], notable: 'Bdubs' },
-        { name: 'EthosLab', finalPlacement: 9, lives: { start: 6, end: 0 }, kills: [], deaths: ['Gimmick'], alliances: ['Sub One Club'], notable: 'Etho' },
-        { name: 'TangoTek', finalPlacement: 10, lives: { start: 6, end: 0 }, kills: [], deaths: ['Gimmick'], alliances: ['Sub One Club'], notable: 'Tango' },
-        { name: 'ImpulseSV', finalPlacement: 11, lives: { start: 6, end: 0 }, kills: [], deaths: ['Gimmick'], alliances: ['Sub One Club'], notable: 'Impulse' },
-        { name: 'ZombieCleo', finalPlacement: 12, lives: { start: 6, end: 0 }, kills: [], deaths: ['Gimmick'], alliances: ['Spanners'], notable: 'Cleo' },
-        { name: 'GoodTimesWithScar', finalPlacement: 13, lives: { start: 6, end: 0 }, kills: [], deaths: ['Gimmick'], alliances: ['Spanners'], notable: 'Scar' },
-        { name: 'Bigbst4tz2', finalPlacement: 14, lives: { start: 6, end: 0 }, kills: [], deaths: ['Gimmick'], alliances: ['Spanners'], notable: 'BigB' },
-        { name: 'MumboJumbo', finalPlacement: 15, lives: { start: 6, end: 0 }, kills: [], deaths: ['Gimmick'], alliances: ['Grian, Skizz & Mumbo'], notable: 'Mumbo' },
-        { name: 'Skizzleman', finalPlacement: 16, lives: { start: 6, end: 0 }, kills: [], deaths: ['Gimmick'], alliances: ['Grian, Skizz & Mumbo'], notable: 'Skizz' },
-        { name: 'LDShadowLady', finalPlacement: 17, lives: { start: 6, end: 0 }, kills: [], deaths: ['Gimmick'], alliances: ['Spanners'], notable: 'Lizzie' },
-        { name: 'Solidarity', finalPlacement: 18, lives: { start: 6, end: 0 }, kills: [], deaths: ['Gimmick'], alliances: ['Grian, Skizz & Mumbo'], notable: 'Jimmy - Last Place' }
+        { name: 'SmallishBeans', finalPlacement: 1, lives: { start: 6, end: 0 }, kills: 7, deaths: 6, alliances: ['The Family'], notable: 'Joel - Winner (First win, 4 eliminations)' },
+        { name: 'Grian', finalPlacement: 2, lives: { start: 6, end: 0 }, kills: 5, deaths: 6, alliances: ['Various'], notable: 'Grian - Runner-up (3 eliminations)' },
+        { name: 'Rendog', finalPlacement: 3, lives: { start: 6, end: 0 }, kills: 4, deaths: 6, alliances: ['The Gs'], notable: 'Ren - Bronze (Returns)' },
+        { name: 'ZombieCleo', finalPlacement: 4, lives: { start: 6, end: 0 }, kills: 0, deaths: 6, alliances: ['The Gs'], notable: 'Cleo' },
+        { name: 'PearlescentMoon', finalPlacement: 5, lives: { start: 6, end: 0 }, kills: 2, deaths: 6, alliances: ['The Gs'], notable: 'Pearl' },
+        { name: 'TangoTek', finalPlacement: 6, lives: { start: 6, end: 0 }, kills: 1, deaths: 6, alliances: ['Tuff Guys'], notable: 'Tango' },
+        { name: 'BdoubleO100', finalPlacement: 7, lives: { start: 6, end: 0 }, kills: 0, deaths: 6, alliances: ['Tuff Guys'], notable: 'Bdubs' },
+        { name: 'EthosLab', finalPlacement: 8, lives: { start: 6, end: 0 }, kills: 2, deaths: 6, alliances: ['Tuff Guys'], notable: 'Etho' },
+        { name: 'GeminiTay', finalPlacement: 9, lives: { start: 6, end: 0 }, kills: 0, deaths: 6, alliances: ['The Family'], notable: 'Gem' },
+        { name: 'Smajor1995', finalPlacement: 10, lives: { start: 6, end: 0 }, kills: 2, deaths: 6, alliances: ['The Gs'], notable: 'Scott' },
+        { name: 'ImpulseSV', finalPlacement: 11, lives: { start: 6, end: 0 }, kills: 0, deaths: 6, alliances: ['The Gs'], notable: 'Impulse' },
+        { name: 'Solidarity', finalPlacement: 12, lives: { start: 6, end: 0 }, kills: 6, deaths: 6, alliances: ['Bamboozlers'], notable: 'Jimmy - 6 kills' },
+        { name: 'LDShadowLady', finalPlacement: 13, lives: { start: 6, end: 0 }, kills: 1, deaths: 6, alliances: ['The Spanners'], notable: 'Lizzie' },
+        { name: 'GoodTimesWithScar', finalPlacement: 14, lives: { start: 6, end: 0 }, kills: 0, deaths: 6, alliances: ['The Spanners'], notable: 'Scar' },
+        { name: 'Bigbst4tz2', finalPlacement: 15, lives: { start: 6, end: 0 }, kills: 0, deaths: 6, alliances: ['The Spanners'], notable: 'BigB' },
+        { name: 'InTheLittleWood', finalPlacement: 16, lives: { start: 6, end: 0 }, kills: 0, deaths: 6, alliances: ['Renwood Mound'], notable: 'Martyn' },
+        { name: 'Skizzleman', finalPlacement: 17, lives: { start: 6, end: 0 }, kills: 6, deaths: 6, alliances: ['Various'], notable: 'Skizz' },
+        { name: 'MumboJumbo', finalPlacement: 18, lives: { start: 6, end: 0 }, kills: 8, deaths: 6, alliances: ['The Spanners'], notable: 'Mumbo - First out (Most kills: 8!)' }
       ]
     },
     'Real Life': {
       participants: [
-        { name: 'ZombieCleo', finalPlacement: 1, lives: { start: 3, end: 0 }, kills: ['Multiple'], deaths: ['VR mechanics'], alliances: ['Divorce Quartet'], notable: 'Cleo - VR Winner' },
-        { name: 'Smajor1995', finalPlacement: 2, lives: { start: 3, end: 0 }, kills: ['Multiple'], deaths: ['VR mechanics'], alliances: ['Mean Gills'], notable: 'Scott - VR Runner-up' },
-        { name: 'GeminiTay', finalPlacement: 3, lives: { start: 3, end: 0 }, kills: ['Multiple'], deaths: ['VR mechanics'], alliances: ['G.G.G.G.'], notable: 'Gem - VR Bronze' },
-        { name: 'InTheLittleWood', finalPlacement: 4, lives: { start: 3, end: 0 }, kills: [], deaths: ['VR mechanics'], alliances: ['Tuff Guys'], notable: 'Martyn' },
-        { name: 'TangoTek', finalPlacement: 5, lives: { start: 3, end: 0 }, kills: [], deaths: ['VR mechanics'], alliances: ['T.I.E.S.'], notable: 'Tango' },
-        { name: 'Grian', finalPlacement: 18, lives: { start: 3, end: 0 }, kills: [], deaths: ['VR mechanics'], alliances: ['The Spanners'], notable: 'Last Place in VR' }
+        { name: 'ZombieCleo', finalPlacement: 1, lives: { start: 3, end: 2 }, kills: 4, deaths: 3, alliances: ['Gaslight Gatekeep Girlboss'], notable: 'Cleo - Winner (VR special, 4 eliminations)' },
+        { name: 'Smajor1995', finalPlacement: 2, lives: { start: 3, end: 2 }, kills: 4, deaths: 3, alliances: ['Gaslight Gatekeep Girlboss', 'Dogwarts 2'], notable: 'Scott - Runner-up' },
+        { name: 'GeminiTay', finalPlacement: 3, lives: { start: 3, end: 1 }, kills: 1, deaths: 3, alliances: ['Gaslight Gatekeep Girlboss'], notable: 'Gem - Bronze' },
+        { name: 'InTheLittleWood', finalPlacement: 4, lives: { start: 3, end: 2 }, kills: 0, deaths: 3, alliances: ['The Club'], notable: 'Martyn' },
+        { name: 'PearlescentMoon', finalPlacement: 5, lives: { start: 3, end: 2 }, kills: 1, deaths: 3, alliances: ['Gaslight Gatekeep Girlboss'], notable: 'Pearl' },
+        { name: 'Bigbst4tz2', finalPlacement: 6, lives: { start: 3, end: 2 }, kills: 0, deaths: 3, alliances: ['Dogwarts 2'], notable: 'BigB' },
+        { name: 'Solidarity', finalPlacement: 7, lives: { start: 3, end: 1 }, kills: 2, deaths: 3, alliances: ['Various'], notable: 'Jimmy' },
+        { name: 'Rendog', finalPlacement: 8, lives: { start: 3, end: 2 }, kills: 2, deaths: 3, alliances: ['Dogwarts 2', 'The Club'], notable: 'Ren' },
+        { name: 'Skizzleman', finalPlacement: 9, lives: { start: 3, end: 3 }, kills: 0, deaths: 3, alliances: ['Various'], notable: 'Skizz' },
+        { name: 'ImpulseSV', finalPlacement: 10, lives: { start: 3, end: 1 }, kills: 5, deaths: 3, alliances: ['Various'], notable: 'Impulse - Most kills (5)' },
+        { name: 'GoodTimesWithScar', finalPlacement: 11, lives: { start: 3, end: 2 }, kills: 0, deaths: 3, alliances: ['Various'], notable: 'Scar' },
+        { name: 'SmallishBeans', finalPlacement: 12, lives: { start: 3, end: 2 }, kills: 0, deaths: 3, alliances: ['Various'], notable: 'Joel' },
+        { name: 'Grian', finalPlacement: 13, lives: { start: 3, end: 3 }, kills: 3, deaths: 3, alliances: ['The Spanners'], notable: 'Grian - First out (VR special)' }
       ]
     },
     'Simple Life': {
       participants: [
-        { name: 'Smajor1995', finalPlacement: 1, lives: { start: 3, end: 0 }, kills: ['Multiple'], deaths: ['Superflat mechanics'], alliances: [], notable: 'Scott - Superflat Winner' },
-        { name: 'Grian', finalPlacement: 2, lives: { start: 3, end: 0 }, kills: ['Multiple'], deaths: ['Superflat mechanics'], alliances: [], notable: 'Runner-up' },
-        { name: 'GoodTimesWithScar', finalPlacement: 3, lives: { start: 3, end: 0 }, kills: [], deaths: ['Superflat mechanics'], alliances: [], notable: 'Scar - Bronze' }
+        { name: 'Smajor1995', finalPlacement: 1, lives: { start: 3, end: 1 }, kills: 3, deaths: 3, alliances: ['Dirt Fortress'], notable: 'Scott - Winner (Superflat special)' },
+        { name: 'Grian', finalPlacement: 2, lives: { start: 3, end: 1 }, kills: 2, deaths: 3, alliances: ['Various'], notable: 'Grian - Runner-up' },
+        { name: 'GoodTimesWithScar', finalPlacement: 3, lives: { start: 3, end: 1 }, kills: 3, deaths: 3, alliances: ['Various'], notable: 'Scar - Bronze (3 eliminations)' },
+        { name: 'TangoTek', finalPlacement: 4, lives: { start: 3, end: 1 }, kills: 0, deaths: 3, alliances: ['Various'], notable: 'Tango' },
+        { name: 'Bigbst4tz2', finalPlacement: 5, lives: { start: 3, end: 0 }, kills: 3, deaths: 3, alliances: ['Various'], notable: 'BigB' },
+        { name: 'ZombieCleo', finalPlacement: 6, lives: { start: 3, end: 2 }, kills: 1, deaths: 3, alliances: ['Various'], notable: 'Cleo' },
+        { name: 'SmallishBeans', finalPlacement: 7, lives: { start: 3, end: 0 }, kills: 3, deaths: 3, alliances: ['Various'], notable: 'Joel' },
+        { name: 'GeminiTay', finalPlacement: 8, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Various'], notable: 'Gem' },
+        { name: 'Solidarity', finalPlacement: 9, lives: { start: 3, end: 0 }, kills: 1, deaths: 3, alliances: ['Various'], notable: 'Jimmy' },
+        { name: 'PearlescentMoon', finalPlacement: 10, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Various'], notable: 'Pearl' },
+        { name: 'Skizzleman', finalPlacement: 11, lives: { start: 3, end: 0 }, kills: 1, deaths: 3, alliances: ['Various'], notable: 'Skizz' },
+        { name: 'InTheLittleWood', finalPlacement: 12, lives: { start: 3, end: 0 }, kills: 1, deaths: 3, alliances: ['Various'], notable: 'Martyn' },
+        { name: 'Rendog', finalPlacement: 13, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Various'], notable: 'Ren' },
+        { name: 'BdoubleO100', finalPlacement: 14, lives: { start: 3, end: 0 }, kills: 0, deaths: 3, alliances: ['Various'], notable: 'Bdubs - First out (Superflat)' }
       ]
     },
     'Past Life': {
       participants: [
-        { name: 'Bigbst4tz2', finalPlacement: 1, lives: { start: 6, end: 6, remaining: 6 }, kills: 0, deaths: 0, alliances: ['TBD'], notable: 'BigB - 6 lives (Ongoing)' },
-        { name: 'GoodTimesWithScar', finalPlacement: 1, lives: { start: 6, end: 6, remaining: 6 }, kills: 1, deaths: 0, alliances: ['TBD'], notable: 'Scar - 6 lives (Ongoing)' },
-        { name: 'ImpulseSV', finalPlacement: 1, lives: { start: 6, end: 6, remaining: 6 }, kills: 0, deaths: 0, alliances: ['TBD'], notable: 'Impulse - 6 lives (Ongoing)' },
-        { name: 'PearlescentMoon', finalPlacement: 1, lives: { start: 6, end: 6, remaining: 6 }, kills: 0, deaths: 0, alliances: ['TBD'], notable: 'Pearl - 6 lives (Ongoing)' },
-        { name: 'Grian', finalPlacement: 5, lives: { start: 6, end: 5, remaining: 5 }, kills: 4, deaths: 1, alliances: ['TBD'], notable: 'Kill Leader - 4 kills (Ongoing)' },
-        { name: 'GeminiTay', finalPlacement: 5, lives: { start: 6, end: 5, remaining: 5 }, kills: 4, deaths: 1, alliances: ['TBD'], notable: 'Gem - 4 kills (Ongoing)' },
-        { name: 'EthosLab', finalPlacement: 7, lives: { start: 6, end: 5, remaining: 5 }, kills: 2, deaths: 1, alliances: ['TBD'], notable: 'Etho - 2 kills (Ongoing)' },
-        { name: 'InTheLittleWood', finalPlacement: 8, lives: { start: 6, end: 5, remaining: 5 }, kills: 0, deaths: 1, alliances: ['TBD'], notable: 'Martyn (Ongoing)' },
-        { name: 'Rendog', finalPlacement: 8, lives: { start: 6, end: 5, remaining: 5 }, kills: 0, deaths: 1, alliances: ['TBD'], notable: 'Ren (Ongoing)' },
-        { name: 'Skizzleman', finalPlacement: 8, lives: { start: 6, end: 5, remaining: 5 }, kills: 0, deaths: 1, alliances: ['TBD'], notable: 'Skizz (Ongoing)' },
-        { name: 'Smajor1995', finalPlacement: 8, lives: { start: 6, end: 5, remaining: 5 }, kills: 0, deaths: 1, alliances: ['TBD'], notable: 'Scott - Boogeyman Ep2 (Ongoing)' },
-        { name: 'SmallishBeans', finalPlacement: 8, lives: { start: 6, end: 5, remaining: 5 }, kills: 0, deaths: 1, alliances: ['TBD'], notable: 'Joel - Boogeyman Ep2 (Ongoing)' },
-        { name: 'BdoubleO100', finalPlacement: 13, lives: { start: 6, end: 4, remaining: 4 }, kills: 0, deaths: 2, alliances: ['TBD'], notable: 'Bdubs - 4 lives (Ongoing)' },
-        { name: 'Solidarity', finalPlacement: 13, lives: { start: 6, end: 4, remaining: 4 }, kills: 0, deaths: 2, alliances: ['TBD'], notable: 'Jimmy - 4 lives (Ongoing)' }
+        { name: 'InTheLittleWood', finalPlacement: 1, lives: { start: 6, end: 0 }, kills: 13, deaths: 6, alliances: ['Lost Generation'], notable: 'Martyn - Winner (13 kills)' },
+        { name: 'Grian', finalPlacement: 2, lives: { start: 6, end: 0 }, kills: 22, deaths: 6, alliances: ['The Villies'], notable: 'Runner-up - Most kills (22)' },
+        { name: 'GeminiTay', finalPlacement: 3, lives: { start: 6, end: 0 }, kills: 14, deaths: 6, alliances: ['The Villies'], notable: 'Gem - Bronze (14 kills)' },
+        { name: 'Solidarity', finalPlacement: 4, lives: { start: 6, end: 0 }, kills: 10, deaths: 6, alliances: ['Rejects'], notable: 'Jimmy - 10 kills (2 eliminations)' },
+        { name: 'Smajor1995', finalPlacement: 5, lives: { start: 6, end: 0 }, kills: 10, deaths: 6, alliances: ['Cabin Core'], notable: 'Scott - 10 kills (2 eliminations)' },
+        { name: 'ZombieCleo', finalPlacement: 6, lives: { start: 6, end: 0 }, kills: 1, deaths: 6, alliances: ['Lost Generation'], notable: 'Cleo' },
+        { name: 'ImpulseSV', finalPlacement: 7, lives: { start: 6, end: 0 }, kills: 2, deaths: 6, alliances: ['Gluten Guys'], notable: 'Impulse' },
+        { name: 'GoodTimesWithScar', finalPlacement: 8, lives: { start: 6, end: 0 }, kills: 12, deaths: 6, alliances: ['Cabin Core'], notable: 'Scar - 12 kills' },
+        { name: 'BdoubleO100', finalPlacement: 9, lives: { start: 6, end: 0 }, kills: 1, deaths: 6, alliances: ['Cabin Core'], notable: 'Bdubs' },
+        { name: 'Bigbst4tz2', finalPlacement: 10, lives: { start: 6, end: 0 }, kills: 0, deaths: 6, alliances: ['Rejects'], notable: 'BigB' },
+        { name: 'Skizzleman', finalPlacement: 11, lives: { start: 6, end: 0 }, kills: 0, deaths: 6, alliances: ['Rejects'], notable: 'Skizz' },
+        { name: 'SmallishBeans', finalPlacement: 12, lives: { start: 6, end: 0 }, kills: 1, deaths: 6, alliances: ['Rejects'], notable: 'Joel' },
+        { name: 'EthosLab', finalPlacement: 13, lives: { start: 6, end: 0 }, kills: 12, deaths: 6, alliances: ['Cabin Core'], notable: 'Etho - 12 kills' },
+        { name: 'PearlescentMoon', finalPlacement: 14, lives: { start: 6, end: 0 }, kills: 4, deaths: 6, alliances: ['The Villies'], notable: 'Pearl' },
+        { name: 'Rendog', finalPlacement: 15, lives: { start: 6, end: 0 }, kills: 1, deaths: 6, alliances: ['Gluten Guys'], notable: 'Ren' },
+        { name: 'TangoTek', finalPlacement: 16, lives: { start: 6, end: 0 }, kills: 0, deaths: 6, alliances: ['Gluten Guys'], notable: 'Tango - First Out' }
       ]
     }
   };
@@ -197,8 +217,8 @@ const LifeSeriesTracker = () => {
         stats.totalDeaths += typeof participant.deaths === 'number' ? participant.deaths : participant.deaths.length;
         stats.bestPlacement = Math.min(stats.bestPlacement, participant.finalPlacement);
         stats.worstPlacement = Math.max(stats.worstPlacement, participant.finalPlacement);
-        // Only count wins from completed series (exclude ongoing series like Past Life)
-        if (participant.finalPlacement === 1 && seriesName !== 'Past Life') stats.wins++;
+        // Count wins from all completed series
+        if (participant.finalPlacement === 1) stats.wins++;
         participant.alliances.forEach(alliance => stats.alliances.add(alliance));
         stats.series.push({
           name: seriesName,
@@ -312,22 +332,9 @@ const LifeSeriesTracker = () => {
           <div className="bg-gray-800 p-6 rounded-lg">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-gray-400 text-sm">{selectedSeries === 'Past Life' ? 'Favored to win' : 'Winner'}</p>
+                <p className="text-gray-400 text-sm">Winner</p>
                 <p className="text-xl font-bold text-yellow-400">
-                  {(() => {
-                    if (selectedSeries === 'Past Life') {
-                      // Get the #1 ranked player based on lives/kills sorting
-                      const sortedParticipants = [...currentSeries.participants].sort((a, b) => {
-                        if (a.lives.remaining !== b.lives.remaining) {
-                          return b.lives.remaining - a.lives.remaining;
-                        }
-                        return (typeof b.kills === 'number' ? b.kills : b.kills.length) - (typeof a.kills === 'number' ? a.kills : a.kills.length);
-                      });
-                      return sortedParticipants[0]?.name;
-                    }
-                    // For completed series, find the winner
-                    return currentSeries.participants.find(p => p.finalPlacement === 1)?.name;
-                  })()}
+                  {currentSeries.participants.find(p => p.finalPlacement === 1)?.name}
                 </p>
               </div>
               <Trophy className="text-yellow-400 w-8 h-8" />
@@ -347,52 +354,16 @@ const LifeSeriesTracker = () => {
                 </h2>
                 <div className="space-y-3">
                   {currentSeries.participants
-                    .sort((a, b) => {
-                      // For ongoing series (Past Life), sort by lives remaining then kills
-                      if (selectedSeries === 'Past Life') {
-                        if (a.lives.remaining !== b.lives.remaining) {
-                          return b.lives.remaining - a.lives.remaining; // Higher lives first
-                        }
-                        return (typeof b.kills === 'number' ? b.kills : b.kills.length) - (typeof a.kills === 'number' ? a.kills : a.kills.length); // Higher kills first
-                      }
-                      // For completed series, use final placement
-                      return a.finalPlacement - b.finalPlacement;
-                    })
-                    .map((participant, index, sortedArray) => {
-                      let displayRank;
-                      if (selectedSeries === 'Past Life') {
-                        // Calculate tied ranks for ongoing series
-                        const currKills = typeof participant.kills === 'number' ? participant.kills : participant.kills.length;
-                        const currCombo = `${participant.lives.remaining}-${currKills}`;
-                        
-                        // Find the first occurrence of this combination to get the rank
-                        displayRank = 1;
-                        const seenCombinations = new Set();
-                        
-                        for (let i = 0; i < sortedArray.length; i++) {
-                          const player = sortedArray[i];
-                          const playerKills = typeof player.kills === 'number' ? player.kills : player.kills.length;
-                          const playerCombo = `${player.lives.remaining}-${playerKills}`;
-                          
-                          if (playerCombo === currCombo) {
-                            // Found first occurrence of this combination
-                            displayRank = seenCombinations.size + 1;
-                            break;
-                          }
-                          seenCombinations.add(playerCombo);
-                        }
-                      } else {
-                        displayRank = participant.finalPlacement;
-                      }
-                      return (
+                    .sort((a, b) => a.finalPlacement - b.finalPlacement)
+                    .map((participant) => (
                       <div
                         key={participant.name}
                         onClick={() => setSelectedMember(participant.name)}
                         className="flex items-center justify-between p-4 bg-gray-700 rounded-lg hover:bg-gray-600 cursor-pointer transition-colors"
                       >
                         <div className="flex items-center space-x-4">
-                          <span className={`px-3 py-1 rounded-full text-sm font-bold ${getPlacementBadge(displayRank)}`}>
-                            #{displayRank}
+                          <span className={`px-3 py-1 rounded-full text-sm font-bold ${getPlacementBadge(participant.finalPlacement)}`}>
+                            #{participant.finalPlacement}
                           </span>
                           <span className="font-semibold text-lg">{participant.name}</span>
                           <div className="flex space-x-3 text-sm">
@@ -404,12 +375,6 @@ const LifeSeriesTracker = () => {
                               <Heart className="w-4 h-4 mr-1" />
                               {typeof participant.deaths === 'number' ? participant.deaths : participant.deaths.length}
                             </span>
-                            {participant.lives.remaining !== undefined && (
-                              <span className="flex items-center text-green-400">
-                                <Clock className="w-4 h-4 mr-1" />
-                                {participant.lives.remaining}
-                              </span>
-                            )}
                           </div>
                         </div>
                         <div className="text-right">
@@ -417,8 +382,7 @@ const LifeSeriesTracker = () => {
                           <p className="text-xs text-gray-500">{participant.alliances.join(', ')}</p>
                         </div>
                       </div>
-                      );
-                    })}
+                    ))}
                 </div>
               </div>
             ) : (
@@ -533,12 +497,9 @@ const LifeSeriesTracker = () => {
                     {(() => {
                       const winCounts = {};
                       Object.entries(seriesData).forEach(([seriesName, series]) => {
-                        // Only count wins from completed series (exclude ongoing series like Past Life)
-                        if (seriesName !== 'Past Life') {
-                          const winner = series.participants.find(p => p.finalPlacement === 1);
-                          if (winner) {
-                            winCounts[winner.name] = (winCounts[winner.name] || 0) + 1;
-                          }
+                        const winner = series.participants.find(p => p.finalPlacement === 1);
+                        if (winner) {
+                          winCounts[winner.name] = (winCounts[winner.name] || 0) + 1;
                         }
                       });
                       const mostWins = Object.entries(winCounts).reduce((a, b) => a[1] > b[1] ? a : b);
